@@ -1,0 +1,9 @@
+- Descarga e instala wkhtmltopdf para Windows:
+
+- Ve a la página oficial de descargas: https://wkhtmltopdf.org/downloads.html
+- Descarga el instalador para Windows.
+- Instálalo y, durante la instalación, asegúrate de marcar la opción para agregarlo al PATH de Windows (o hazlo manualmente después).
+- Verifica la instalación:
+
+- Abre una terminal (CMD o PowerShell) y escribe:
+  wkhtmltopdf --version
