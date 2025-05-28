@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+
+    <nav style="display: flex; width: 100%;">
+        <ul style="display: flex; gap: 50px; width: 100%;">
+            <li style="margin-top: 30px; list-style: none; padding: 10px; background-color:rgb(0, 0, 41); color: white ; border-radius: 12px;"  ><a href="/">Volver al inicio</a></li>
+            <li style="margin-top: 30px; list-style: none; padding: 10px; background-color:rgb(0, 0, 41); color: white ; border-radius: 12px;" ><a href="/estudiantes">Consultar estudiantes</a></li>
+            <li style="margin-top: 30px; list-style: none; padding: 10px; background-color:rgb(0, 0, 41); color: white ; border-radius: 12px;" ><a href="/Notas">Consultar notas de un estudiante</a></li>
+            <li style="margin-top: 30px; list-style: none; padding: 10px; background-color:rgb(0, 0, 41); color: white ; border-radius: 12px;"><a href="/registrar">Registrar nuevo estudiante</a></li>
+        </ul>
+    </nav>
+    
+
+    <div class="title" style="display: flex; justify-content: center">
+        <h1>Estudiantes</h1>
+        
+    </div>
+
+    <table class="table table-striped" style="width: 100%; text-align: center;margin-top: 40px; ">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
