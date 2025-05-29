@@ -1,0 +1,37 @@
+body {
+    background-color: #181824;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 60px;
+    font-size: 2.5em;
+    color: #ffb6c1;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.btn-inventario {
+    background-color: #ffb6c1;
+    color: #23263a;
+    border: none;
+    border-radius: 8px;
+    padding: 18px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 30px;
+}
+
+.btn-inventario:hover {
+    background-color: #ff69b4;
+    color: #fff;
+}

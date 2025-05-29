@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🧑‍🦰Portal: Servicios Civicos</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+            }
+            nav ul li {
+                display: inline-block;
+            }
+            nav ul li a {
+                display: block;
+                padding: 10px 20px;
+                color: #fff;
+                background: #007bff;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: background 0.3s, color 0.3s, transform 0.2s;
+                font-weight: 500;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            }
+            nav ul li a:hover, nav ul li a:focus {
+                background: #0056b3;
+                color: #ffd700;
+                transform: translateY(-2px) scale(1.05);
+                text-decoration: none;
+            }
+            section {
+                text-align: center;
+            }
+            section img {
+                display: block;
+                margin: 20px auto 0 auto;
+                max-width: 250px;
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            }
+            footer {
+                text-align: center;
+                margin-top: 40px;
+                color: #888;
+            }
+            body {
+                background: #f8f9fa;
+            }
+            h1, h2 {
+                text-align: center;
+            }
+            .servicios-title {
+                margin-bottom: 30px;
+                margin-top: 40px;
+                font-size: 2rem;
+                color: #007bff;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+        </style>
+    </head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Bienvenido a el portal de servicios civicos</h1>
+        <h2 class="servicios-title">Servicios disponibles</h2>
+        <nav>
+            <ul>
+                <li><a href="/reportes">Reportes ciudadanos</a></li>
+                <li><a href="/aire">Calidad del aire</a></li>
+                <li><a href="/censo">Censo comunitario</a></li>
+                <li><a href="/educacion">Educacion</a></li>
+                <li><a href="/movilidad">Movilidad urbana</a></li>
+            </ul>
+        </nav>
+        <br>
+        <section>
+            <p>Explora los diferentes servicios que ofrecemos para mejorar la calidad de vida</p>
+            <img src="../static/civicos.jpg" alt="Civicos">
+        </section>
+
+        <br><br><br><br>
+
+        <footer>
+            <p>&copy; 2025 Student Management SENA DAVID. All rights reserved.</p>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
