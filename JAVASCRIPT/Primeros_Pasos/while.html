@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios while</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios while</h1>       
+    </header>
+    <section>
+        <h2>Ejemplos de while y do while</h2>
+        <script type="text/Javascript">
+            function student() {
+                var studentName = "";
+                while (studentName.toUpperCase() ! = "NN") {
+                    studentName = prompt("Ingrese el nombre del estudiante: ");
+                    alert ("El nombre del estudiante: " + studentName+ " ha sido registrado correctamente");
+                    
+                }
+            }
+            student();
+        </script>
+
+
+        <script>
+        var age = 0;
+        var count = -1;
+        var totalAge = 0, averageAge =0;
+        do {
+            age = parseInt(prompt("Ingrese la edad del estudiante: "));
+            if(age <=10){
+                alert("Debes ser mayor de edad para ingresar")
+            }else{
+                alert("Bienvenido")
+            }
+            totalAge = totalAge + age;
+            count++;
+        }while (age != 0);
+        averageAge = parseInt(totalAge/count);
+        document.write("cant:" + count + "and average :" + averageAge);
+        </script>
+
+    </section>
+    
+</body>
+</html>

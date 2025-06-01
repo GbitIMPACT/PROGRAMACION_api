@@ -1,0 +1,22 @@
+{
+    
+        "version": "0.2.0",
+        "configurations": [
+          {
+            "name": "Debug HTML in Firefox",
+            "type": "firefox",
+            "request": "launch",
+            "file": "${workspaceFolder}/index.html",
+            "reAttach": true,
+            "pathMappings": [
+              {
+                "url": "http://localhost:8080/",
+                "path": "${workspaceFolder}"
+              }
+            ],
+            "firefoxExecutable": "C:/Program Files/Firefox Developer Edition/firefox.exe"
+          }
+        ]
+      
+      
+}
